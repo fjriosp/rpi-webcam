@@ -1,0 +1,13 @@
+#Sun Feb 02 20:37:55 CET 2014
+/data/RPI/rpi-webcam/LICENSE=c1391259722000
+/data/RPI/rpi-webcam/src/capture/capture.h=c1391261327000
+/data/RPI/rpi-webcam/src/jpeg/jpeg.h=c1391261327000
+/data/RPI/rpi-webcam/nbproject/project.xml=c1391261517000
+/data/RPI/rpi-webcam/src/capture/capture.c=c1391261441000
+/data/RPI/rpi-webcam/src/jpeg/jpeg.c=c1391261327000
+/data/RPI/rpi-webcam/src/log/log.h=c1391261327000
+/data/RPI/rpi-webcam/src/main.c=c1391261423000
+/data/RPI/rpi-webcam/README.md=c1391259722000
+/data/RPI/rpi-webcam/src/log/log.c=c1391261327000
+/data/RPI/rpi-webcam/Makefile=c1391261476000
+VERSION=1.3

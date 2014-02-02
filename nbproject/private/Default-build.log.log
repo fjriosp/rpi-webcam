@@ -1,0 +1,5 @@
+cc -g  -c src/log/log.c -o bin/log/log.o
+cc -g  -c src/main.c -o bin/main.o
+cc -g  -c src/jpeg/jpeg.c -o bin/jpeg/jpeg.o
+cc -g  -c src/capture/capture.c -o bin/capture/capture.o
+cc -o rpi-webcam bin/log/log.o bin/main.o bin/jpeg/jpeg.o bin/capture/capture.o -ljpeg -lpthread

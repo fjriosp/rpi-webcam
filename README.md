@@ -4,8 +4,8 @@ rpi-webcam
 rpi-webcam is a simple server that listen on port 9000 and take snapshots from a webcam, compress in JPEG and send it as response.
 
 The protocol only support 2 commands:
--*f* retrieves a frame.
--*q* terminate the server.
+- *f* retrieves a frame.
+- *q* terminate the server.
 
 You can send commands easily with nc:
 
@@ -16,10 +16,11 @@ echo 'f' | nc localhost 9000 > snapshot.jpeg
 
 Close the server:
 <pre>
-echo 'f' | nc localhost 9000 > snapshot.jpeg
+echo 'q' | nc localhost 9000
 </pre>
 
-= Compilation =
+Compilation
+===========
 
 Compile rpi-webcam is easy, the only you could do is:
 <pre>

@@ -6,7 +6,7 @@
 #include <bcm_host.h>
 #include <ilclient.h>
 
-#include "../log/log.h"
+#include "log.h"
 #include "jpeg.h"
 
 typedef struct IJPEGEncoder IJPEGEncoder;
@@ -116,7 +116,7 @@ int jpeg_init(JPEGEncoder* encoder) {
         return -1;
     }
 
-    qfactor.nQFactor = ctx->e.quality;
+    qfactor.nQFactor = ctx->e.quality / 10;
 
     rc = OMX_SetParameter(ILC_GET_HANDLE(ctx->component), OMX_IndexParamQFactor, &qfactor);
     if (rc != OMX_ErrorNone) {

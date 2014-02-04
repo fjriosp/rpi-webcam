@@ -10,10 +10,10 @@
 #include <semaphore.h>
 #include <time.h>
 
-#include "buffer/buffer.h"
-#include "capture/capture.h"
-#include "jpeg/jpeg.h"
-#include "log/log.h"
+#include "buffer.h"
+#include "capture.h"
+#include "jpeg.h"
+#include "log.h"
 
 typedef struct MainContext {
     Capture* cctx;
@@ -130,7 +130,7 @@ int main(int ac, char** av) {
     mctx.jctx = jpeg_create_encoder();
     mctx.jctx->width = mctx.cctx->width;
     mctx.jctx->height = mctx.cctx->height;
-    mctx.jctx->quality = 40;
+    mctx.jctx->quality = 70;
     mctx.jctx->output = buffer_create();
 
     jpeg_init(mctx.jctx);

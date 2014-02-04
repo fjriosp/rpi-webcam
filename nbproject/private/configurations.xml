@@ -7,20 +7,16 @@
         </df>
         <df name="capture">
         </df>
+        <df name="jpeg">
+        </df>
         <df name="log">
         </df>
       </df>
       <df name="jpeg_cpu">
-        <df name="jpeg">
-          <in>jpeg.c</in>
-          <in>jpeg.h</in>
-        </df>
+        <in>jpeg.c</in>
       </df>
       <df name="jpeg_omx">
-        <df name="jpeg">
-          <in>jpeg.c</in>
-          <in>jpeg.h</in>
-        </df>
+        <in>jpeg.c</in>
       </df>
       <df name="src">
         <df name="buffer">

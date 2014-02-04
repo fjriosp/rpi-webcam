@@ -9,7 +9,7 @@
 #include <sys/ioctl.h>
 
 #include "capture.h"
-#include "../log/log.h"
+#include "log.h"
 
 typedef enum {
     UNINITIALIZED,

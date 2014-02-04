@@ -4,7 +4,7 @@
 #include <math.h>
 
 #include "buffer.h"
-#include "../log/log.h"
+#include "log.h"
 
 Buffer* buffer_create() {
     Buffer* b = malloc(sizeof (Buffer));

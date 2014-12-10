@@ -130,7 +130,7 @@ int main(int ac, char** av) {
     mctx.jctx = jpeg_create_encoder();
     mctx.jctx->width = mctx.cctx->width;
     mctx.jctx->height = mctx.cctx->height;
-    mctx.jctx->quality = 70;
+    mctx.jctx->quality = 80;
     mctx.jctx->output = buffer_create();
 
     jpeg_init(mctx.jctx);
@@ -198,7 +198,7 @@ int main(int ac, char** av) {
         } else if (cmd == 'f') {
             LOG_INFO("Frame command received");
             time_t now = time(NULL);
-            if (now - last > 60) {
+            if (now - last > 10) {
                 LOG_INFO("New connection after %d seconds idle", now - last);
 
                 // Flush capture buffers
